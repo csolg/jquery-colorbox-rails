@@ -479,7 +479,8 @@
 
 			$groupControls = $next.add($prev).add($current).add($slideshow);
 		}
-		if (document.body && !$box.parent().length) {
+		//if (document.body && !$box.parent().length) {
+		if (document.body) {
 			$(document.body).append($overlay, $box.append($wrap, $loadingBay));
 		}
 	}
